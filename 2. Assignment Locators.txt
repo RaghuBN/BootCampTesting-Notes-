@@ -1,0 +1,21 @@
+Automate the following test scenarios:(Locators ID,Name,Xpath,LinkText,TagName)
+	1.User TestNG Framework  and Open 
+	URL "https://www.easycalculation.com/index.php" 
+		a.Chrome Browser
+		b.Edge
+	2. Click on "Age Calculator" link Count number of 'links' and 'Images'  
+           Print only 10 Links and 5 images
+	   Then Select Your Date of Birth : 
+          	 Enter Date :15
+           	 Enter Month:08
+           	 Enter Year :1947
+	3. Then Click "GO" Button
+	4. Print the values from below fields:-  
+           Your Age is:
+           Your Age in Days:
+           Your Age in Hours:
+           Your Age in Minutes:
+        5. Then Click Reset
+        6. Run and Validate in Jenkins
+        7. Push code from Eclipse to Github
+        8. Share Github link

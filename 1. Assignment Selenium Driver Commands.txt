@@ -1,0 +1,157 @@
+Case Study: 
+        1. Open using any Browser  
+		a.	Chrome Browser
+		b.	Firefox
+		c.	Edge Enter values using Locator ID
+	2.Open URL: https://www.login.hiox.com/register?referrer=easycalculation.com 
+	3.Print Page Title 
+	4.Get page Source and Page Source length
+	5.Close the Browser
+
+-------------------------------------------------------------------
+1. Open using any Browser  
+		a.	Chrome Browser
+		b.	Firefox
+		c.	Edge Enter values using Locator ID,Name and Xpath
+2.Open URL: https://www.easycalculation.com/
+3.Enter "Bangalore" in Editbox then click serach button
+4.Print Page Title 
+5.Get page Source and Page Source length
+6.Close the Browser
+----------------------------------------------------------------------
+
+1. Open using any Browser  
+		a.	Chrome Browser
+		b.	Firefox
+		c.	Edge Enter values using Locator ID,Name and Xpath
+2.Open URL: https://www.easycalculation.com/
+3.Enter "Bangalore" in Editbox then click serach button
+4.Print Page Title 
+5.Get page Source and Page Source length
+6.Close the Browser
+==============================================================================
+Count Number links and Print all the links in www.easycalculation.com in Calculator Page?
+1. Open using any Browser  TestNG Framework
+		a.	Chrome Browser
+		b.	Firefox
+		c.	Edge Enter values using Locator ID,Name and Xpath
+---------------------------------------------------------------------------------
+Count Number links and Print all the links in https://store.webkul.com
+
+        1.User TestNG Framework  and Open URL By any browser
+		a.Chrome Browser
+		b.Edge
+	2.Open URL: https://store.webkul.com
+	3.Get Page Title name 
+	4.Close the Browser
+
+---------------------------------------------------------------------------------
+
+1.User TestNG Framework  and Open URL By 
+		a.Chrome Browser
+	2.Navigate to URL: "http://automationpractice.com/index.php
+	3.Get Page Title name and Title length 
+	4.Get page URL and verify whether it is the desired page or not
+	5.Get page Source and Page Source length
+        6.Count Number links and Print all the links
+	7.Close the Browser
+
+----------------------------------------------------------------------------------
+
+        1.User TestNG Framework  and Open URL By any browser
+		a.
+
+	2.Open URL: https://store.webkul.com
+	3.Get Page Title name 
+	4.Take Screen shot of home page
+        5. Count Number links and Print all the links
+        6. Close the Browser
+----------------------------------------------------------------------------------
+
+        1.Use HeadLess Browser Concept and Open URL 
+	2.URL: https://store.webkul.com
+	3.Get Page Title name 
+	4.Take Screen shot of home page
+        5.Close the Browser
+
+==========================================================================
+1.Use @Parameters Concept and Open URL URL: https://demo.opencart.com/
+2.Create Test Suite
+3.Get Page Title name 
+4.Take Screen shot of home page
+5.Close the Browser
+6.Run Validate through TestNG Suite
+=============================================================
+1.Use TestNG Framework to open ChromeBrowser  
+URL: https://demo.opencart.com/
+Parameterize the user name and password using DataProvider 
+==========================================================================
+1.Use TestNG Framework to open ChromeBrowser use 2.https://www.easycalculation.com/
+3.Perform operation under 'FREE Tutorials' Click on "Area Tutorials"
+4.Take Screen shot 
+5.Close the Browser
+6.Run Validate 
+
+------------------------------------------------------------------
+Case study for Mouse Moments
+1.Use TestNG Framework to open Chrome Browser 
+2.Use https://www.easemytrip.com/
+3.Move hand over on "More" then click on 'Gift Card'
+4.Take Screen shot 
+5.Close the Browser
+6.Run and Validate test scripts
+---------------------------------------------------------
+1.Use TestNG Framework to open Chrome Browser 
+2.Use https://www.easemytrip.com/
+3.Move hand over on "MyAccount" then click on 'My Booking'
+4.Take Screen shot, Enter value email id then click Continue
+5.Close the Browser
+6.Run and Validate test scripts
+
+-----------------------------------------------------------------------------------------
+
+1.Use TestNG Framework to open Chrome Browser 
+2.Use https://www.easemytrip.com/
+3.Use Hard assertions to compare this strings 
+  String1 = "MyAccount" and String2 = 'My Booking'
+	assertEquals
+	assertNotEquals
+	assertTrue
+	assertFalse
+	assertNull
+	assertNotNull
+4. Run and Validate test scripts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
