@@ -1,0 +1,54 @@
+-- Create database
+CREATE DATABASE IF NOT EXISTS read_demo;
+USE read_demo;
+
+-- Create employees table
+CREATE TABLE employees (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    email VARCHAR(100) UNIQUE,
+    phone VARCHAR(20),
+    department VARCHAR(50),
+    position VARCHAR(50),
+    salary DECIMAL(10,2),
+    hire_date DATE,
+    is_active BOOLEAN DEFAULT TRUE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Create departments table
+CREATE TABLE departments (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50) UNIQUE,
+    budget DECIMAL(15,2),
+    manager_id INT,
+    location VARCHAR(100)
+);
+
+-- Insert sample data
+INSERT INTO departments (name, budget, manager_id, location) VALUES
+('IT', 500000.00, 1, 'New York'),
+('HR', 300000.00, 2, 'Los Angeles'),
+('Finance', 400000.00, 3, 'Chicago'),
+('Marketing', 350000.00, 4, 'San Francisco'),
+('Sales', 450000.00, 5, 'Boston');
+
+INSERT INTO employees (first_name, last_name, email, phone, department, position, salary, hire_date, is_active) VALUES
+('John', 'Doe', 'john.doe@company.com', '555-0101', 'IT', 'Senior Developer', 85000.00, '2020-01-15', TRUE),
+('Jane', 'Smith', 'jane.smith@company.com', '555-0102', 'HR', 'HR Manager', 72000.00, '2019-06-20', TRUE),
+('Bob', 'Johnson', 'bob.johnson@company.com', '555-0103', 'Finance', 'Accountant', 65000.00, '2018-11-01', TRUE),
+('Alice', 'Williams', 'alice.williams@company.com', '555-0104', 'IT', 'Developer', 75000.00, '2021-03-10', TRUE),
+('Charlie', 'Brown', 'charlie.brown@company.com', '555-0105', 'Marketing', 'Marketing Specialist', 68000.00, '2020-07-15', FALSE),
+('Diana', 'Prince', 'diana.prince@company.com', '555-0106', 'Sales', 'Sales Manager', 90000.00, '2019-09-01', TRUE),
+('Edward', 'Cullen', 'edward.cullen@company.com', '555-0107', 'IT', 'DevOps Engineer', 82000.00, '2021-01-20', TRUE),
+('Frank', 'Castle', 'frank.castle@company.com', '555-0108', 'Finance', 'Financial Analyst', 78000.00, '2020-11-15', FALSE),
+('Grace', 'Hopper', 'grace.hopper@company.com', '555-0109', 'IT', 'Tech Lead', 95000.00, '2018-05-01', TRUE),
+('Henry', 'Ford', 'henry.ford@company.com', '555-0110', 'Sales', 'Sales Representative', 60000.00, '2022-01-10', TRUE);
+
+INSERT INTO employees (first_name, last_name, email, phone, department, position, salary, hire_date, is_active) VALUES
+('Ivy', 'Green', 'ivy.green@company.com', '555-0111', 'HR', 'Recruiter', 58000.00, '2022-03-15', TRUE),
+('Jack', 'Black', 'jack.black@company.com', '555-0112', 'Marketing', 'Digital Marketer', 62000.00, '2021-08-20', TRUE),
+('Karen', 'White', 'karen.white@company.com', '555-0113', 'IT', 'QA Engineer', 70000.00, '2020-12-01', FALSE),
+('Leo', 'Davis', 'leo.davis@company.com', '555-0114', 'Sales', 'Account Executive', 75000.00, '2021-06-10', TRUE),
+('Mia', 'Taylor', 'mia.taylor@company.com', '555-0115', 'Finance', 'Auditor', 71000.00, '2019-10-15', TRUE);
